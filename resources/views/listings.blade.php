@@ -1,3 +1,7 @@
+@extends('layout')
+
+@section('content')
+
 <h1>{{$heading}}</h1>
 
 @if(count($listings) == 0)
@@ -17,3 +21,5 @@
     $test = 'Test';
 @endphp
 {{$test}}
+
+@endsection
