@@ -35,6 +35,7 @@ Route::get('/', function () {
 //         abort('500');
 //     }
 // });
+// Code below has automatically '404 functionality'
 Route::get('/listings/{listing}', function(Listing $listing) {
     return view('listing', [
         'listing' => $listing
